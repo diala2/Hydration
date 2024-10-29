@@ -15,7 +15,7 @@ class WaterIntakeViewModel: ObservableObject {
     init(totalWaterIntake: Binding<Double>) {
         _totalWaterIntake = totalWaterIntake
     }
-
+ 
     func updateCompletionStatus() {
         if waterIntake >= totalWaterIntake {
             hasStartedTracking = false  // Reset for the next day, if needed
